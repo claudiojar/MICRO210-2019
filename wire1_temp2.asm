@@ -33,5 +33,5 @@ main:
 	mov	a0,c0
 
 	PRINTF	LCD
-.db	"temp=",FFRAC2+FSIGN,a,4,$42,"C ",CR,0
+	.db		"temp=",FFRAC2+FSIGN,a,4,$42,"C ",CR,0
 	rjmp	main
