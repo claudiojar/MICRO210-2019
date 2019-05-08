@@ -39,39 +39,31 @@
 .endm
 
 .org 0
-.cseg
 
 reset:
 	LDSP	RAMEND			; Load Stack Pointer (SP)
 	rcall	ws2812b4_init		; initialize 
 
 ;-------------------------------------------------------------
+ldi r24, 0x00
+ldi r25, 0x40
+	
 main:
-	ldi r24, 0x10
-	ldi r25, 0x40
-	/*
-	for : 
-		cp r24,r25
-		breq outloop
-		dec r25
-		ldi a0,0xcc	;loading the color to led
-		ldi a1,0x0f
-		ldi a2,0xcc
-		rcall ws2812b4_byte3wr
-		rjmp for
-		
-	outloop :
-		rcall ws2812b4_reset 
-		nop
-		rjmp PC+1 
-	*/
+	 
+	cp r24,r25
+	breq outloop
+	dec r25
 	
 	ldi a0,0xcc	;loading the color to led
 	ldi a1,0x0f
 	ldi a2,0xcc
-	rcall ws2812b4_reset
-	
-
+	rcall ws2812b4_byte3wr
+		
+	rjmp main
+		
+outloop :
+	rcall ws2812b4_reset 
+	rjmp end
 
 end:
 	rjmp end
