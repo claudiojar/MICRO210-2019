@@ -16,8 +16,8 @@
 ; PORTD is assumed only used for the purpose
 .macro	WS2812b4_WR0
 	clr	u
-	sbi PORTD, 1
-	out PORTD, u
+	sbi PORTC, 1
+	out PORTC, u
 	nop
 	nop
 	;nop
@@ -27,10 +27,10 @@
 ; WS2812b4_WR1	; macro ; arg: void; used: void
 ; purpose: write an active-high one-pulse to PD1
 .macro	WS2812b4_WR1
-	sbi PORTD, 1
+	sbi PORTC, 1
 	nop
 	nop
-	cbi PORTD, 1
+	cbi PORTC, 1
 	;nop
 	;nop
 .endm
@@ -219,7 +219,7 @@ end:
 ; ws2812b4_init		; arg: void; used: r16 (w)
 ; purpose: initialize AVR to support ws2812b
 ws2812b4_init:
-	OUTI	DDRD,0x02
+	OUTI	DDRC,0x02
 ret
 
 ; ws2812b4_byte3wr	; arg: a0,a1,a2 ; used: r16 (w)
@@ -271,6 +271,6 @@ ret
 ; ws2812b4_reset	; arg: void; used: r16 (w)
 ; purpose: reset pulse, configuration becomes effective
 ws2812b4_reset:
-	cbi PORTD, 1
+	cbi PORTC, 1
 	WAIT_US	50 	; 50 us are required, NO smaller works
 ret
