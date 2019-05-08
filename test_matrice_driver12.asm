@@ -49,7 +49,7 @@ reset:
 main:
 	ldi r24, 0x10
 	ldi r25, 0x40
-	
+	/*
 	for : 
 		cp r24,r25
 		breq outloop
@@ -64,7 +64,11 @@ main:
 		rcall ws2812b4_reset 
 		nop
 		rjmp PC+1 
+	*/
 	
+	ldi a0,0xcc	;loading the color to led
+	ldi a1,0x0f
+	ldi a2,0xcc
 	rcall ws2812b4_reset
 	
 
