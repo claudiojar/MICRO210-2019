@@ -1,4 +1,4 @@
-;<pre><div class="text_to_html">; file	ws2812b_4MHz_demo03_S.asm   target ATmega128L-4MHz-STK300
+<pre><div class="text_to_html">; file	ws2812b_4MHz_demo03_S.asm   target ATmega128L-4MHz-STK300
 ; purpose send data to ws2812b using 4 MHz MCU and standard I/O port
 ;         display four basic colors on first four LEDs
 ; usage: ws2812 on PORTD (data, bit 1)
@@ -9,18 +9,15 @@
 ; 20180926 AxS
 
 .include "macros.asm"	; include macro definitions
-.include "definitions.asm" ; include register/constant definitions
-
-.equ colour = 0xff ; a color defined fo the entire matrix, later given by main
-
+.include "definitions.asm"	; include register/constant definitions
 
 ; WS2812b4_WR0	; macro ; arg: void; used: void
-; purpose: write an active-high zero-pulse to PC1
-; PORTC is assumed only used for the purpose
+; purpose: write an active-high zero-pulse to PD1
+; PORTD is assumed only used for the purpose
 .macro	WS2812b4_WR0
 	clr	u
-	sbi PORTC, 1
-	out PORTC, u
+	sbi PORTD, 1
+	out PORTD, u
 	nop
 	nop
 	;nop
@@ -30,10 +27,10 @@
 ; WS2812b4_WR1	; macro ; arg: void; used: void
 ; purpose: write an active-high one-pulse to PD1
 .macro	WS2812b4_WR1
-	sbi PORTC, 1
+	sbi PORTD, 1
 	nop
 	nop
-	cbi PORTC, 1
+	cbi PORTD, 1
 	;nop
 	;nop
 .endm
@@ -45,20 +42,26 @@ reset:
 	rcall	ws2812b4_init		; initialize 
 
 main:
-	
-	ldi r20, 0x00
-	ldi r21, 0x40
-	for : 
-		cp r20,r21
-		breq outloop
-		ldi a0,0xff	;loading the color to led
-		ldi a1,0xff
-		ldi a2,0xff
-		rcall ws2812b4_byte3wr
-		
-	outloop : 
-		nop
-	
+	ldi a0,0x00		;zero-intensity, pixel is off
+	ldi a1,0x00
+	ldi a2,0x00
+	rcall ws2812b4_byte3wr
+
+	ldi a0,0x0f		;low-intensity pure green
+	ldi a1,0x00
+	ldi a2,0x00
+	rcall ws2812b4_byte3wr
+
+	ldi a0,0x00		;low-intensity pure red
+	ldi a1,0x0f
+	ldi a2,0x00
+	rcall ws2812b4_byte3wr
+
+	ldi a0,0x00		;low-intensity pure blue
+	ldi a1,0x00
+	ldi a2,0x0f	
+	rcall ws2812b4_byte3wr
+
 	rcall ws2812b4_reset
 
 end:
@@ -68,7 +71,7 @@ end:
 ; ws2812b4_init		; arg: void; used: r16 (w)
 ; purpose: initialize AVR to support ws2812b
 ws2812b4_init:
-	OUTI	DDRC,0x02
+	OUTI	DDRD,0x02
 ret
 
 ; ws2812b4_byte3wr	; arg: a0,a1,a2 ; used: r16 (w)
@@ -77,48 +80,39 @@ ret
 ws2812b4_byte3wr:
 
 	ldi w,8
-	
 ws2b3_starta0:
 	sbrc a0,7
 	rjmp	ws2b3w1
 	WS2812b4_WR0		
 	rjmp	ws2b3_nexta0
-	
 ws2b3w1:
 	WS2812b4_WR1
-	
 ws2b3_nexta0:
 	lsl a0
 	dec	w
 	brne ws2b3_starta0
 
 	ldi w,8
-	
 ws2b3_starta1:
 	sbrc a1,7
 	rjmp	ws2b3w1a1
 	WS2812b4_WR0		
 	rjmp	ws2b3_nexta1
-	
 ws2b3w1a1:
 	WS2812b4_WR1
-	
 ws2b3_nexta1:
 	lsl a1
 	dec	w
 	brne ws2b3_starta1
 
 	ldi w,8
-	
 ws2b3_starta2:
 	sbrc a2,7
 	rjmp	ws2b3w1a2
 	WS2812b4_WR0		
 	rjmp	ws2b3_nexta2
-	
 ws2b3w1a2:
 	WS2812b4_WR1
-	
 ws2b3_nexta2:
 	lsl a2
 	dec	w
@@ -129,6 +123,6 @@ ret
 ; ws2812b4_reset	; arg: void; used: r16 (w)
 ; purpose: reset pulse, configuration becomes effective
 ws2812b4_reset:
-	cbi PORTC, 1
+	cbi PORTD, 1
 	WAIT_US	50 	; 50 us are required, NO smaller works
-;ret</div></pre>
+ret</div></pre>

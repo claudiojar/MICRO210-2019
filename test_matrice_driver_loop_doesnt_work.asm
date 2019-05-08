@@ -11,6 +11,9 @@
 .include "macros.asm"	; include macro definitions
 .include "definitions.asm" ; include register/constant definitions
 
+;.equ colour = 0xff ; a color defined fo the entire matrix, later given by main
+
+
 ; WS2812b4_WR0	; macro ; arg: void; used: void
 ; purpose: write an active-high zero-pulse to PC1
 ; PORTC is assumed only used for the purpose
@@ -41,31 +44,30 @@ reset:
 	LDSP	RAMEND			; Load Stack Pointer (SP)
 	rcall	ws2812b4_init		; initialize 
 
+;-------------------------------------------------------------
+ldi r24, 0x00
+ldi r25, 0x40
+	
 main:
-	ldi a0,0x00		;zero-intensity, pixel is off
-	ldi a1,0x00
-	ldi a2,0x00
-	rcall ws2812b4_byte3wr
-
-	ldi a0,0x0f		;low-intensity pure green
-	ldi a1,0x00
-	ldi a2,0x00
-	rcall ws2812b4_byte3wr
-
-	ldi a0,0x00		;low-intensity pure red
+	 
+	cp r24,r25
+	breq outloop
+	dec r25
+	
+	ldi a0,0xcc	;loading the color to led
 	ldi a1,0x0f
-	ldi a2,0x00
+	ldi a2,0xcc
 	rcall ws2812b4_byte3wr
-
-	ldi a0,0x00		;low-intensity pure blue
-	ldi a1,0x00
-	ldi a2,0x0f	
-	rcall ws2812b4_byte3wr
-
-	rcall ws2812b4_reset
+		
+	rjmp main
+		
+outloop :
+	rcall ws2812b4_reset 
+	rjmp end
 
 end:
 	rjmp end
+
 
 
 ; ws2812b4_init		; arg: void; used: r16 (w)
@@ -78,46 +80,62 @@ ret
 ; purpose: write contents of a0,a1,a2 (24 bit) into ws2812, 1 LED configuring
 ;     GBR color coding, LSB first
 ws2812b4_byte3wr:
-
 	ldi w,8
+ret
+	
 ws2b3_starta0:
 	sbrc a0,7
 	rjmp	ws2b3w1
 	WS2812b4_WR0		
 	rjmp	ws2b3_nexta0
+ret
+	
 ws2b3w1:
 	WS2812b4_WR1
+ret
+	
 ws2b3_nexta0:
 	lsl a0
 	dec	w
 	brne ws2b3_starta0
 
 	ldi w,8
+ret
+	
 ws2b3_starta1:
 	sbrc a1,7
 	rjmp	ws2b3w1a1
 	WS2812b4_WR0		
 	rjmp	ws2b3_nexta1
+ret
+	
 ws2b3w1a1:
 	WS2812b4_WR1
+ret
+	
 ws2b3_nexta1:
 	lsl a1
 	dec	w
 	brne ws2b3_starta1
 
 	ldi w,8
+ret
+	
 ws2b3_starta2:
 	sbrc a2,7
 	rjmp	ws2b3w1a2
 	WS2812b4_WR0		
 	rjmp	ws2b3_nexta2
+ret
+	
 ws2b3w1a2:
 	WS2812b4_WR1
+ret
+	
 ws2b3_nexta2:
 	lsl a2
 	dec	w
 	brne ws2b3_starta2
-	
 ret
 
 ; ws2812b4_reset	; arg: void; used: r16 (w)
@@ -125,4 +143,4 @@ ret
 ws2812b4_reset:
 	cbi PORTC, 1
 	WAIT_US	50 	; 50 us are required, NO smaller works
-ret</div></pre>
+ret
