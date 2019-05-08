@@ -43,9 +43,9 @@ reset:
 
 main:
 ;8 LEDS 1
-	ldi a0,0x00		;zero-intensity, pixel is off
-	ldi a1,0x00
-	ldi a2,0x00
+	ldi a0,0xFF		;zero-intensity, pixel is off
+	ldi a1,0xcc
+	ldi a2,0xFF
 	rcall ws2812b4_byte3wr
 
 	ldi a0,0x0f		;low-intensity pure green
