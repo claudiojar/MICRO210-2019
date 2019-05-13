@@ -15,7 +15,7 @@
     <Name>Local-MICRO210</Name>
     <RootNamespace>Local-MICRO210</RootNamespace>
     <ToolchainFlavour>Native</ToolchainFlavour>
-    <EntryFile>$(MSBuildProjectDirectory)\test_matrice_driver11.asm</EntryFile>
+    <EntryFile>$(MSBuildProjectDirectory)\main.asm</EntryFile>
     <KeepTimersRunning>true</KeepTimersRunning>
     <OverrideVtor>false</OverrideVtor>
     <CacheFlash>true</CacheFlash>
@@ -95,6 +95,9 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="buttons_2.asm">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="definitions.asm">
       <SubType>Code</SubType>
     </Compile>
@@ -110,13 +113,13 @@
     <Compile Include="main.asm">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="matrix_driver1.asm">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="printf.asm">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="speaker1.asm">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="test_matrice_driver11.asm">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="wire1.asm">
