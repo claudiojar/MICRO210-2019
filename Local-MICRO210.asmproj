@@ -15,8 +15,7 @@
     <Name>Local-MICRO210</Name>
     <RootNamespace>Local-MICRO210</RootNamespace>
     <ToolchainFlavour>Native</ToolchainFlavour>
-    <EntryFile>
-    </EntryFile>
+    <EntryFile>$(MSBuildProjectDirectory)\main.asm</EntryFile>
     <KeepTimersRunning>true</KeepTimersRunning>
     <OverrideVtor>false</OverrideVtor>
     <CacheFlash>true</CacheFlash>

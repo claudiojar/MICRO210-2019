@@ -91,16 +91,14 @@ main:
 
 //=======================================================================================	
 	// LED MATRIX //
-	
-	/*;rcall ws2812b4_reset ; activate LED Matrix 
-	ldi a3, 30*/
 
+	;ldi a3, 28
 	;sous_routine pour affecter une couleur à la LED en fonction de la température
 	compare_1 : 
-		cpi a3, 27	;compare a3 to temperature 25
+		cpi a3, 27	;compare a3 to temperature 27
 		brmi compare_2 ;if negative branch to next routine
-		ldi zl, low(2*colour_red) ;point to table
-		ldi zh, high(2*colour_red)
+		ldi zl, low(2*colour_orange) ;point to table
+		ldi zh, high(2*colour_orange)
 		lpm
 		mov c1,r0	; read low byte from table
 		adiw zl,1	; increment pointer z
@@ -112,8 +110,23 @@ main:
 		rjmp iluminate
 
 	compare_2 : 
-		cpi a3, 26	;compare a3 to temperature 25
-		brmi default_colour ;if negative branch to next routine
+		cpi a3, 25	;compare a3 to temperature 25
+		brmi compare_3
+		ldi zl, low(2*colour_yellowish) ;point to table
+		ldi zh, high(2*colour_yellowish)
+		lpm
+		mov c1,r0	; read low byte from table
+		adiw zl,1	; increment pointer z
+		lpm
+		mov c2, r0
+		adiw zl,1
+		lpm
+		mov c3, r0
+		rjmp iluminate
+
+	compare_3 : 
+		cpi a3, 24	;compare a3 to temperature 24
+		brmi compare_4 ;if negative branch to next routine
 		ldi zl, low(2*colour_green) ;point to table
 		ldi zh, high(2*colour_green)
 		lpm
@@ -125,10 +138,26 @@ main:
 		lpm
 		mov c3, r0
 		rjmp iluminate
-	
+
+	compare_4 : 
+		cpi a3, 22	;compare a3 to temperature 22
+		brmi default_colour ;if negative branch to next routine
+		ldi zl, low(2*colour_blue2) ;point to table
+		ldi zh, high(2*colour_blue2)
+		lpm
+		mov c1,r0	; read low byte from table
+		adiw zl,1	; increment pointer z
+		lpm
+		mov c2, r0
+		adiw zl,1
+		lpm
+		mov c3, r0
+		rjmp iluminate
+
+
 	default_colour : 
-		ldi zl, low(2*colour_blue) ;point to table
-		ldi zh, high(2*colour_blue)
+		ldi zl, low(2*colour_blue1) ;point to table
+		ldi zh, high(2*colour_blue1)
 		lpm
 		mov c1,r0	; read low byte from table
 		adiw zl,1	; increment pointer z
@@ -159,8 +188,11 @@ main:
 	
 	rjmp	main
 
-	; ===== LUT for LED colours =====
-colour_blue : .db 0x01, 0x01, 0xff ; GRB
-colour_green : .db 0xff, 0x01, 0x01
-colour_red : .db 0x01,0xff, 0x01
+	; ===== LUT for LED colours ===== -> colour coding is GRB
+colour_blue1 : .db 0xff, 0x99, 0xff		;used for temps below 22
+colour_blue2 : .db 0xb2, 0x66, 0xff		;used for temps between 22 ans 24
+colour_green : .db 0xff, 0x01, 0x00		;used for temps between 24 and 25
+colour_yellowish : .db 0xd9, 0xff, 0x3c ;used for temps between 25 and 27 
+colour_orange : .db 0x90,0xff, 0x01		;used for temps above 27 
+colour_red : .db 0x01,0xff, 0x01		;used for alarm
 

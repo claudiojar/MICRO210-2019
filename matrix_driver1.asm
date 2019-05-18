@@ -44,38 +44,7 @@
 	mov b2,@1
 	mov b3,@2
 	rcall ws2812b4_byte3wr
-	/*
-	ldi b1,@0		;pixel with a given value 
-	ldi b2,@1
-	ldi b3,@2
-	rcall ws2812b4_byte3wr
-
-	ldi b1,@0		;pixel with a given value 
-	ldi b2,@1
-	ldi b3,@2
-	rcall ws2812b4_byte3wr
 	
-	ldi b1,@0		;pixel with a given value 
-	ldi b2,@1
-	ldi b3,@2
-	rcall ws2812b4_byte3wr
-	
-	ldi b1,@0		;pixel with a given value 
-	ldi b2,@1
-	ldi b3,@2
-	rcall ws2812b4_byte3wr
-	
-	ldi b1,@0		;pixel with a given value 
-	ldi b2,@1
-	ldi b3,@2
-	rcall ws2812b4_byte3wr
-	
-	ldi b1,@0		;pixel with a given value 
-	ldi b2,@1
-	ldi b3,@2
-	rcall ws2812b4_byte3wr
-;8 LEDS 1
-*/
 	rcall ws2812b4_reset
 .endm
 
