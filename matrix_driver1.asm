@@ -80,6 +80,326 @@
 	mov b3,@2
 	rcall ws2812b4_byte3wr
 
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
+	mov b1,@0		;pixel with a given value 
+	mov b2,@1
+	mov b3,@2
+	rcall ws2812b4_byte3wr
+
 
 	
 	rcall ws2812b4_reset

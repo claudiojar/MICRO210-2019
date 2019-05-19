@@ -109,6 +109,8 @@ main:
 	;ldi a3, 28
 	;sous_routine pour affecter une couleur à la LED en fonction de la température
 	compare_1 : 
+		cp a3, b0 ;test if we're over the maximum temperature
+		brmi matrix_alarm
 		cpi a3, 27	;compare a3 to temperature 27
 		brmi compare_2 ;if negative branch to next routine
 		ldi zl, low(2*colour_orange) ;point to table
@@ -124,6 +126,8 @@ main:
 		rjmp iluminate
 
 	compare_2 : 
+		cp a3, b0 ;test if we're over the maximum temperature
+		brmi matrix_alarm
 		cpi a3, 25	;compare a3 to temperature 25
 		brmi compare_3
 		ldi zl, low(2*colour_yellowish) ;point to table
@@ -139,6 +143,8 @@ main:
 		rjmp iluminate
 
 	compare_3 : 
+		cp a3, b0 ;test if we're over the maximum temperature
+		brmi matrix_alarm
 		cpi a3, 24	;compare a3 to temperature 24
 		brmi compare_4 ;if negative branch to next routine
 		ldi zl, low(2*colour_green) ;point to table
@@ -154,6 +160,8 @@ main:
 		rjmp iluminate
 
 	compare_4 : 
+		cp a3, b0 ;test if we're over the maximum temperature
+		brmi matrix_alarm
 		cpi a3, 22	;compare a3 to temperature 22
 		brmi default_colour ;if negative branch to next routine
 		ldi zl, low(2*colour_blue2) ;point to table
@@ -206,7 +214,7 @@ main:
 colour_blue1 : .db 0xff, 0x99, 0xff		;used for temps below 22
 colour_blue2 : .db 0xb2, 0x66, 0xff		;used for temps between 22 ans 24
 colour_green : .db 0xff, 0x01, 0x00		;used for temps between 24 and 25
-colour_yellowish : .db 0xd9, 0xf0, 0x3c ;used for temps between 25 and 27 
+colour_yellowish : .db 0xf0, 0xf0, 0x33 ;used for temps between 25 and 27 
 colour_orange : .db 0x66,0xcc, 0x01		;used for temps above 27 
 colour_red : .db 0x01,0xff, 0x01		;used for alarm
 
