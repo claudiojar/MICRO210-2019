@@ -1,20 +1,20 @@
 
-AVRASM ver. 2.2.7  C:\Users\claud\Documents\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-the-cooler-big-merge\main.asm Sat May 18 23:53:51 2019
+AVRASM ver. 2.2.6  C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-claudiojar-the-cooler-merge\MICRO210-claudiojar-the-cooler-merge\main.asm Sun May 19 11:27:18 2019
 
-[builtin](2): Including file 'C:\Users\claud\Documents\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-the-cooler-big-merge\m128def.inc'
-C:\Users\claud\Documents\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-the-cooler-big-merge\main.asm(10): Including file 'C:\Users\claud\Documents\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-the-cooler-big-merge\macros.asm'
-C:\Users\claud\Documents\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-the-cooler-big-merge\main.asm(11): Including file 'C:\Users\claud\Documents\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-the-cooler-big-merge\definitions.asm'
-C:\Users\claud\Documents\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-the-cooler-big-merge\main.asm(28): Including file 'C:\Users\claud\Documents\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-the-cooler-big-merge\matrix_driver1.asm'
-C:\Users\claud\Documents\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-the-cooler-big-merge\main.asm(29): Including file 'C:\Users\claud\Documents\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-the-cooler-big-merge\lcd.asm'
-C:\Users\claud\Documents\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-the-cooler-big-merge\main.asm(30): Including file 'C:\Users\claud\Documents\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-the-cooler-big-merge\printf.asm'
-C:\Users\claud\Documents\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-the-cooler-big-merge\main.asm(31): Including file 'C:\Users\claud\Documents\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-the-cooler-big-merge\wire1.asm'
-[builtin](2): Including file 'C:\Users\claud\Documents\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-the-cooler-big-merge\m128def.inc'
-C:\Users\claud\Documents\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-the-cooler-big-merge\main.asm(10): Including file 'C:\Users\claud\Documents\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-the-cooler-big-merge\macros.asm'
-C:\Users\claud\Documents\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-the-cooler-big-merge\main.asm(11): Including file 'C:\Users\claud\Documents\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-the-cooler-big-merge\definitions.asm'
-C:\Users\claud\Documents\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-the-cooler-big-merge\main.asm(28): Including file 'C:\Users\claud\Documents\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-the-cooler-big-merge\matrix_driver1.asm'
-C:\Users\claud\Documents\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-the-cooler-big-merge\main.asm(29): Including file 'C:\Users\claud\Documents\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-the-cooler-big-merge\lcd.asm'
-C:\Users\claud\Documents\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-the-cooler-big-merge\main.asm(30): Including file 'C:\Users\claud\Documents\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-the-cooler-big-merge\printf.asm'
-C:\Users\claud\Documents\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-the-cooler-big-merge\main.asm(31): Including file 'C:\Users\claud\Documents\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-the-cooler-big-merge\wire1.asm'
+[builtin](2): Including file 'C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-claudiojar-the-cooler-merge\MICRO210-claudiojar-the-cooler-merge\m128def.inc'
+C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-claudiojar-the-cooler-merge\MICRO210-claudiojar-the-cooler-merge\main.asm(10): Including file 'C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-claudiojar-the-cooler-merge\MICRO210-claudiojar-the-cooler-merge\macros.asm'
+C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-claudiojar-the-cooler-merge\MICRO210-claudiojar-the-cooler-merge\main.asm(11): Including file 'C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-claudiojar-the-cooler-merge\MICRO210-claudiojar-the-cooler-merge\definitions.asm'
+C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-claudiojar-the-cooler-merge\MICRO210-claudiojar-the-cooler-merge\main.asm(28): Including file 'C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-claudiojar-the-cooler-merge\MICRO210-claudiojar-the-cooler-merge\matrix_driver1.asm'
+C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-claudiojar-the-cooler-merge\MICRO210-claudiojar-the-cooler-merge\main.asm(29): Including file 'C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-claudiojar-the-cooler-merge\MICRO210-claudiojar-the-cooler-merge\lcd.asm'
+C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-claudiojar-the-cooler-merge\MICRO210-claudiojar-the-cooler-merge\main.asm(30): Including file 'C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-claudiojar-the-cooler-merge\MICRO210-claudiojar-the-cooler-merge\printf.asm'
+C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-claudiojar-the-cooler-merge\MICRO210-claudiojar-the-cooler-merge\main.asm(31): Including file 'C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-claudiojar-the-cooler-merge\MICRO210-claudiojar-the-cooler-merge\wire1.asm'
+[builtin](2): Including file 'C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-claudiojar-the-cooler-merge\MICRO210-claudiojar-the-cooler-merge\m128def.inc'
+C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-claudiojar-the-cooler-merge\MICRO210-claudiojar-the-cooler-merge\main.asm(10): Including file 'C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-claudiojar-the-cooler-merge\MICRO210-claudiojar-the-cooler-merge\macros.asm'
+C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-claudiojar-the-cooler-merge\MICRO210-claudiojar-the-cooler-merge\main.asm(11): Including file 'C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-claudiojar-the-cooler-merge\MICRO210-claudiojar-the-cooler-merge\definitions.asm'
+C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-claudiojar-the-cooler-merge\MICRO210-claudiojar-the-cooler-merge\main.asm(28): Including file 'C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-claudiojar-the-cooler-merge\MICRO210-claudiojar-the-cooler-merge\matrix_driver1.asm'
+C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-claudiojar-the-cooler-merge\MICRO210-claudiojar-the-cooler-merge\main.asm(29): Including file 'C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-claudiojar-the-cooler-merge\MICRO210-claudiojar-the-cooler-merge\lcd.asm'
+C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-claudiojar-the-cooler-merge\MICRO210-claudiojar-the-cooler-merge\main.asm(30): Including file 'C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-claudiojar-the-cooler-merge\MICRO210-claudiojar-the-cooler-merge\printf.asm'
+C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-claudiojar-the-cooler-merge\MICRO210-claudiojar-the-cooler-merge\main.asm(31): Including file 'C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-claudiojar-the-cooler-merge\MICRO210-claudiojar-the-cooler-merge\wire1.asm'
                                  
                                  /*
                                  
@@ -3157,6 +3157,43 @@ C:\Users\claud\Documents\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MI
                                  	mov b2,@1
                                  	mov b3,@2
                                  	rcall ws2812b4_byte3wr
+                                 
+                                 	mov b1,@0		;pixel with a given value 
+                                 	mov b2,@1
+                                 	mov b3,@2
+                                 	rcall ws2812b4_byte3wr
+                                 
+                                 	mov b1,@0		;pixel with a given value 
+                                 	mov b2,@1
+                                 	mov b3,@2
+                                 	rcall ws2812b4_byte3wr
+                                 
+                                 	mov b1,@0		;pixel with a given value 
+                                 	mov b2,@1
+                                 	mov b3,@2
+                                 	rcall ws2812b4_byte3wr
+                                 
+                                 	mov b1,@0		;pixel with a given value 
+                                 	mov b2,@1
+                                 	mov b3,@2
+                                 	rcall ws2812b4_byte3wr
+                                 
+                                 	mov b1,@0		;pixel with a given value 
+                                 	mov b2,@1
+                                 	mov b3,@2
+                                 	rcall ws2812b4_byte3wr
+                                 
+                                 	mov b1,@0		;pixel with a given value 
+                                 	mov b2,@1
+                                 	mov b3,@2
+                                 	rcall ws2812b4_byte3wr
+                                 
+                                 	mov b1,@0		;pixel with a given value 
+                                 	mov b2,@1
+                                 	mov b3,@2
+                                 	rcall ws2812b4_byte3wr
+                                 
+                                 
                                  	
                                  	rcall ws2812b4_reset
                                  .endm
@@ -4103,21 +4140,12 @@ C:\Users\claud\Documents\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MI
                                  
                                  	// partie 2: comparer TMAX / TAMB (copiée dans b3)
 000233 776f                      	andi b0, 0b01111111 ; BEAUF 
-                                 	/*cpse b0,a3
-                                 	rjmp PC+3
-                                 	cbi PORTE,SPEAKER
-                                 	WAIT_US 100*/
+000234 1365                      	cpse b0,a3
+000235 c00b                      	rjmp compare_1
                                  
-                                 //=======================================================================================	
-                                 	// LED MATRIX //
-                                 
-                                 	;ldi a3, 28
-                                 	;sous_routine pour affecter une couleur à la LED en fonction de la température
-                                 	compare_1 : 
-000234 315b                      		cpi a3, 27	;compare a3 to temperature 27
-000235 f05a                      		brmi compare_2 ;if negative branch to next routine
-000236 e3e6                      		ldi zl, low(2*colour_orange) ;point to table
-000237 e0f5                      		ldi zh, high(2*colour_orange)
+                                 	matrix_alarm :
+000236 e8e8                      		ldi zl, low(2*colour_red) ;point to table
+000237 e0f5                      		ldi zh, high(2*colour_red)
 000238 95c8                      		lpm
 000239 2c90                      		mov c1,r0	; read low byte from table
 00023a 9631                      		adiw zl,1	; increment pointer z
@@ -4126,13 +4154,21 @@ C:\Users\claud\Documents\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MI
 00023d 9631                      		adiw zl,1
 00023e 95c8                      		lpm
 00023f 2cb0                      		mov c3, r0
-000240 c032                      		rjmp iluminate
+000240 c03f                      		rjmp iluminate
+                                 		
+                                 	;cbi PORTE,SPEAKER
+                                 	;WAIT_US 100*/
                                  
-                                 	compare_2 : 
-000241 3159                      		cpi a3, 25	;compare a3 to temperature 25
-000242 f05a                      		brmi compare_3
-000243 e3e2                      		ldi zl, low(2*colour_yellowish) ;point to table
-000244 e0f5                      		ldi zh, high(2*colour_yellowish)
+                                 //=======================================================================================	
+                                 	// LED MATRIX //
+                                 
+                                 	;ldi a3, 28
+                                 	;sous_routine pour affecter une couleur à la LED en fonction de la température
+                                 	compare_1 : 
+000241 315b                      		cpi a3, 27	;compare a3 to temperature 27
+000242 f05a                      		brmi compare_2 ;if negative branch to next routine
+000243 e8e4                      		ldi zl, low(2*colour_orange) ;point to table
+000244 e0f5                      		ldi zh, high(2*colour_orange)
 000245 95c8                      		lpm
 000246 2c90                      		mov c1,r0	; read low byte from table
 000247 9631                      		adiw zl,1	; increment pointer z
@@ -4141,13 +4177,13 @@ C:\Users\claud\Documents\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MI
 00024a 9631                      		adiw zl,1
 00024b 95c8                      		lpm
 00024c 2cb0                      		mov c3, r0
-00024d c025                      		rjmp iluminate
+00024d c032                      		rjmp iluminate
                                  
-                                 	compare_3 : 
-00024e 3158                      		cpi a3, 24	;compare a3 to temperature 24
-00024f f05a                      		brmi compare_4 ;if negative branch to next routine
-000250 e2ee                      		ldi zl, low(2*colour_green) ;point to table
-000251 e0f5                      		ldi zh, high(2*colour_green)
+                                 	compare_2 : 
+00024e 3159                      		cpi a3, 25	;compare a3 to temperature 25
+00024f f05a                      		brmi compare_3
+000250 e8e0                      		ldi zl, low(2*colour_yellowish) ;point to table
+000251 e0f5                      		ldi zh, high(2*colour_yellowish)
 000252 95c8                      		lpm
 000253 2c90                      		mov c1,r0	; read low byte from table
 000254 9631                      		adiw zl,1	; increment pointer z
@@ -4156,13 +4192,13 @@ C:\Users\claud\Documents\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MI
 000257 9631                      		adiw zl,1
 000258 95c8                      		lpm
 000259 2cb0                      		mov c3, r0
-00025a c018                      		rjmp iluminate
+00025a c025                      		rjmp iluminate
                                  
-                                 	compare_4 : 
-00025b 3156                      		cpi a3, 22	;compare a3 to temperature 22
-00025c f05a                      		brmi default_colour ;if negative branch to next routine
-00025d e2ea                      		ldi zl, low(2*colour_blue2) ;point to table
-00025e e0f5                      		ldi zh, high(2*colour_blue2)
+                                 	compare_3 : 
+00025b 3158                      		cpi a3, 24	;compare a3 to temperature 24
+00025c f05a                      		brmi compare_4 ;if negative branch to next routine
+00025d e7ec                      		ldi zl, low(2*colour_green) ;point to table
+00025e e0f5                      		ldi zh, high(2*colour_green)
 00025f 95c8                      		lpm
 000260 2c90                      		mov c1,r0	; read low byte from table
 000261 9631                      		adiw zl,1	; increment pointer z
@@ -4171,85 +4207,127 @@ C:\Users\claud\Documents\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MI
 000264 9631                      		adiw zl,1
 000265 95c8                      		lpm
 000266 2cb0                      		mov c3, r0
-000267 c00b                      		rjmp iluminate
+000267 c018                      		rjmp iluminate
+                                 
+                                 	compare_4 : 
+000268 3156                      		cpi a3, 22	;compare a3 to temperature 22
+000269 f05a                      		brmi default_colour ;if negative branch to next routine
+00026a e7e8                      		ldi zl, low(2*colour_blue2) ;point to table
+00026b e0f5                      		ldi zh, high(2*colour_blue2)
+00026c 95c8                      		lpm
+00026d 2c90                      		mov c1,r0	; read low byte from table
+00026e 9631                      		adiw zl,1	; increment pointer z
+00026f 95c8                      		lpm
+000270 2ca0                      		mov c2, r0
+000271 9631                      		adiw zl,1
+000272 95c8                      		lpm
+000273 2cb0                      		mov c3, r0
+000274 c00b                      		rjmp iluminate
                                  
                                  
                                  	default_colour : 
-000268 e2e6                      		ldi zl, low(2*colour_blue1) ;point to table
-000269 e0f5                      		ldi zh, high(2*colour_blue1)
-00026a 95c8                      		lpm
-00026b 2c90                      		mov c1,r0	; read low byte from table
-00026c 9631                      		adiw zl,1	; increment pointer z
-00026d 95c8                      		lpm
-00026e 2ca0                      		mov c2, r0
-00026f 9631                      		adiw zl,1
-000270 95c8                      		lpm
-000271 2cb0                      		mov c3, r0
-000272 c000                      		rjmp iluminate
+000275 e7e4                      		ldi zl, low(2*colour_blue1) ;point to table
+000276 e0f5                      		ldi zh, high(2*colour_blue1)
+000277 95c8                      		lpm
+000278 2c90                      		mov c1,r0	; read low byte from table
+000279 9631                      		adiw zl,1	; increment pointer z
+00027a 95c8                      		lpm
+00027b 2ca0                      		mov c2, r0
+00027c 9631                      		adiw zl,1
+00027d 95c8                      		lpm
+00027e 2cb0                      		mov c3, r0
+00027f c000                      		rjmp iluminate
                                  
                                  	iluminate : 
-000273 2d79
-000274 2d8a
-000275 2d9b
-000276 dd98
-000277 ddc8                      		WS2812b4_MAIN c1,c2,c3  ; put specified colour in matrix LED
+000280 2d79
+000281 2d8a
+000282 2d9b
+000283 dd8b
+000284 2d79
+000285 2d8a
+000286 2d9b
+000287 dd87
+000288 2d79
+000289 2d8a
+00028a 2d9b
+00028b dd83
+00028c 2d79
+00028d 2d8a
+00028e 2d9b
+00028f dd7f
+000290 2d79
+000291 2d8a
+000292 2d9b
+000293 dd7b
+000294 2d79
+000295 2d8a
+000296 2d9b
+000297 dd77
+000298 2d79
+000299 2d8a
+00029a 2d9b
+00029b dd73
+00029c 2d79
+00029d 2d8a
+00029e 2d9b
+00029f dd6f
+0002a0 dd9f                      		WS2812b4_MAIN c1,c2,c3  ; put specified colour in matrix LED
                                  //=====================================================================
                                  
                                  	// Affichage sur LCD//
                                  	
-000278 dde8                      	rcall LCD_clear
-000279 e505
-00027a 2e40
-00027b e000
-00027c 2e50
-00027d de15                      	PRINTF	LCD
-00027e 6574
-00027f 706d
-000280 8b3d
-000281 0412
-000282 4342
-000283 0d20
-C:\Users\claud\Documents\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-the-cooler-big-merge\main.asm(179): warning: .cseg .db misalignment - padding zero byte
-000284 0000                      	.db		"temp=",FFRAC2+FSIGN,a,4,$42,"C ",CR,0 ; écriture de la température ambiante
+0002a1 ddbf                      	rcall LCD_clear
+0002a2 e505
+0002a3 2e40
+0002a4 e000
+0002a5 2e50
+0002a6 ddec                      	PRINTF	LCD
+0002a7 6574
+0002a8 706d
+0002a9 8b3d
+0002aa 0412
+0002ab 4342
+0002ac 0d20
+C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-claudiojar-the-cooler-merge\MICRO210-claudiojar-the-cooler-merge\main.asm(193): warning: .cseg .db misalignment - padding zero byte
+0002ad 0000                      	.db		"temp=",FFRAC2+FSIGN,a,4,$42,"C ",CR,0 ; écriture de la température ambiante
                                  		
-000285 2488                      	clr c0      // technique de sioux
-000286 0e85                      	add c0,a3
-000287 de06                      	rcall LCD_LF ; passe à la ligne 2 du lcd
-000288 e505
-000289 2e40
-00028a e000
-00028b 2e50
-00028c de06                      	PRINTF	LCD
-                                 	;.db "Tmax=", FDEC,b,"C ",0						   ;écriture de la Tmax set par l'utilisateur
-00028d 6120
-00028e 2033
-00028f 203d
-000290 08c0
-C:\Users\claud\Documents\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-the-cooler-big-merge\main.asm(186): warning: .cseg .db misalignment - padding zero byte
-000291 0000                      	.db " a3 = ", FDEC,c,0
+                                 	;clr c0      // technique de sioux
+                                 	;add c0,a3
+0002ae dddf                      	rcall LCD_LF ; passe à la ligne 2 du lcd
+0002af e505
+0002b0 2e40
+0002b1 e000
+0002b2 2e50
+0002b3 dddf                      	PRINTF	LCD
+0002b4 6d54
+0002b5 7861
+0002b6 c03d
+0002b7 4316
+0002b8 0020                      	.db "Tmax=", FDEC,b,"C ",0						   ;écriture de la Tmax set par l'utilisateur
+                                 	;.db " a3 = ", FDEC,c,0
                                  	
                                  	
-000292 cf69                      	rjmp	main
+0002b9 cf42                      	rjmp	main
                                  
                                  	; ===== LUT for LED colours ===== -> colour coding is GRB
-000293 99ff
-C:\Users\claud\Documents\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-the-cooler-big-merge\main.asm(192): warning: .cseg .db misalignment - padding zero byte
-000294 00ff                      colour_blue1 : .db 0xff, 0x99, 0xff		;used for temps below 22
-000295 66b2
-C:\Users\claud\Documents\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-the-cooler-big-merge\main.asm(193): warning: .cseg .db misalignment - padding zero byte
-000296 00ff                      colour_blue2 : .db 0xb2, 0x66, 0xff		;used for temps between 22 ans 24
-000297 01ff
-C:\Users\claud\Documents\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-the-cooler-big-merge\main.asm(194): warning: .cseg .db misalignment - padding zero byte
-000298 0000                      colour_green : .db 0xff, 0x01, 0x00		;used for temps between 24 and 25
-000299 ffd9
-C:\Users\claud\Documents\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-the-cooler-big-merge\main.asm(195): warning: .cseg .db misalignment - padding zero byte
-00029a 003c                      colour_yellowish : .db 0xd9, 0xff, 0x3c ;used for temps between 25 and 27 
-00029b ff90
-C:\Users\claud\Documents\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-the-cooler-big-merge\main.asm(196): warning: .cseg .db misalignment - padding zero byte
-00029c 0001                      colour_orange : .db 0x90,0xff, 0x01		;used for temps above 27 
-00029d ff01
-C:\Users\claud\Documents\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-the-cooler-big-merge\main.asm(197): warning: .cseg .db misalignment - padding zero byte
-00029e 0001                      colour_red : .db 0x01,0xff, 0x01		;used for alarm
+0002ba 99ff
+C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-claudiojar-the-cooler-merge\MICRO210-claudiojar-the-cooler-merge\main.asm(206): warning: .cseg .db misalignment - padding zero byte
+0002bb 00ff                      colour_blue1 : .db 0xff, 0x99, 0xff		;used for temps below 22
+0002bc 66b2
+C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-claudiojar-the-cooler-merge\MICRO210-claudiojar-the-cooler-merge\main.asm(207): warning: .cseg .db misalignment - padding zero byte
+0002bd 00ff                      colour_blue2 : .db 0xb2, 0x66, 0xff		;used for temps between 22 ans 24
+0002be 01ff
+C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-claudiojar-the-cooler-merge\MICRO210-claudiojar-the-cooler-merge\main.asm(208): warning: .cseg .db misalignment - padding zero byte
+0002bf 0000                      colour_green : .db 0xff, 0x01, 0x00		;used for temps between 24 and 25
+0002c0 f0d9
+C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-claudiojar-the-cooler-merge\MICRO210-claudiojar-the-cooler-merge\main.asm(209): warning: .cseg .db misalignment - padding zero byte
+0002c1 003c                      colour_yellowish : .db 0xd9, 0xf0, 0x3c ;used for temps between 25 and 27 
+0002c2 cc66
+C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-claudiojar-the-cooler-merge\MICRO210-claudiojar-the-cooler-merge\main.asm(210): warning: .cseg .db misalignment - padding zero byte
+0002c3 0001                      colour_orange : .db 0x66,0xcc, 0x01		;used for temps above 27 
+0002c4 ff01
+C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-claudiojar-the-cooler-merge\MICRO210-claudiojar-the-cooler-merge\main.asm(211): warning: .cseg .db misalignment - padding zero byte
+0002c5 0001                      colour_red : .db 0x01,0xff, 0x01		;used for alarm
                                  
 
 
@@ -4268,41 +4346,41 @@ counted separately from r26..r31 here.
 .dseg memory usage only counts static data declared with .byte
 
 "ATmega128" register use summary:
-x  :   6 y  :   0 z  :   0 r0 :  22 r1 :   0 r2 :   0 r3 :  18 r4 :   3 
-r5 :   3 r6 :   0 r7 :   0 r8 :   9 r9 :  11 r10:  11 r11:  12 r12:  11 
+x  :   6 y  :   0 z  :   0 r0 :  25 r1 :   0 r2 :   0 r3 :  18 r4 :   3 
+r5 :   3 r6 :   0 r7 :   0 r8 :   7 r9 :  19 r10:  19 r11:  20 r12:  11 
 r13:   0 r14:   0 r15:   0 r16: 141 r17:   0 r18:  36 r19:  29 r20:  19 
-r21:  23 r22:  13 r23:  28 r24:  10 r25:  18 r26:   4 r27:   4 r28:   0 
-r29:   0 r30:  26 r31:  11 
+r21:  23 r22:  14 r23:  35 r24:  17 r25:  25 r26:   4 r27:   4 r28:   0 
+r29:   0 r30:  29 r31:  12 
 Registers used: 23 out of 35 (65.7%)
 
 "ATmega128" instruction use summary:
-.lds  :   0 .sts  :   0 adc   :   0 add   :   7 adiw  :  15 and   :   0 
+.lds  :   0 .sts  :   0 adc   :   0 add   :   6 adiw  :  17 and   :   0 
 andi  :  10 asr   :   2 bclr  :   0 bld   :   2 brbc  :   0 brbs  :   0 
 brcc  :   3 brcs  :   0 break :   0 breq  :  16 brge  :   0 brhc  :   0 
 brhs  :   0 brid  :   0 brie  :   0 brlo  :   1 brlt  :   0 brmi  :   5 
 brne  :  20 brpl  :   1 brsh  :   1 brtc  :   5 brts  :   0 brvc  :   0 
 brvs  :   0 bset  :   0 bst   :   6 call  :   0 cbi   :  10 cbr   :   0 
-clc   :   1 clh   :   0 cli   :   0 cln   :   0 clr   :  18 cls   :   0 
+clc   :   1 clh   :   0 cli   :   0 cln   :   0 clr   :  17 cls   :   0 
 clt   :   1 clv   :   0 clz   :   0 com   :   8 cp    :   1 cpc   :   3 
-cpi   :  14 cpse  :   0 dec   :  22 elpm  :   0 eor   :   1 fmul  :   0 
+cpi   :  14 cpse  :   1 dec   :  22 elpm  :   0 eor   :   1 fmul  :   0 
 fmuls :   0 fmulsu:   0 icall :   1 ijmp  :   1 in    :   6 inc   :   3 
-jmp   :   0 ld    :   6 ldd   :   0 ldi   :  82 lds   :   3 lpm   :  57 
-lsl   :   4 lsr   :   3 mov   :  47 movw  :   0 mul   :   0 muls  :   0 
+jmp   :   0 ld    :   6 ldd   :   0 ldi   :  84 lds   :   3 lpm   :  66 
+lsl   :   4 lsr   :   3 mov   :  71 movw  :   0 mul   :   0 muls  :   0 
 mulsu :   0 neg   :   0 nop   :  18 or    :   0 ori   :   2 out   :   9 
-pop   :  28 push  :  27 rcall :  55 ret   :  24 reti  :   0 rjmp  :  49 
+pop   :  28 push  :  27 rcall :  62 ret   :  24 reti  :   0 rjmp  :  51 
 rol   :  10 ror   :  17 sbc   :   3 sbci  :   0 sbi   :  10 sbic  :   0 
 sbis  :   2 sbiw  :   0 sbr   :   1 sbrc  :  14 sbrs  :   0 sec   :   0 
 seh   :   0 sei   :   0 sen   :   0 ser   :   0 ses   :   0 set   :   1 
 sev   :   0 sez   :   0 sleep :   0 spm   :   0 st    :   0 std   :   0 
 sts   :   3 sub   :   3 subi  :   3 swap  :   6 tst   :   8 wdr   :   0 
 
-Instructions used: 56 out of 114 (49.1%)
+Instructions used: 57 out of 114 (50.0%)
 
 "ATmega128" memory use summary [bytes]:
 Segment   Begin    End      Code   Data   Used    Size   Use%
 ---------------------------------------------------------------
-[.cseg] 0x000000 0x00053e   1294     48   1342  131072   1.0%
+[.cseg] 0x000000 0x00058c   1372     48   1420  131072   1.1%
 [.dseg] 0x000100 0x000100      0      0      0    4096   0.0%
 [.eseg] 0x000000 0x000000      0      0      0    4096   0.0%
 
-Assembly complete, 0 errors, 8 warnings
+Assembly complete, 0 errors, 7 warnings

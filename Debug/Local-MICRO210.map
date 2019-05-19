@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.2.7  C:\Users\claud\Documents\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-the-cooler-big-merge\main.asm Sat May 18 23:53:51 2019
+AVRASM ver. 2.2.6  C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-claudiojar-the-cooler-merge\MICRO210-claudiojar-the-cooler-merge\main.asm Sun May 19 11:27:18 2019
 
 
 EQU  SIGNATURE_000 0000001e
@@ -1058,16 +1058,17 @@ CSEG wire1_write  000001dd
 CSEG wire1_read   000001e8
 CSEG wire1_crc    000001f1
 CSEG crc1         000001f3
-CSEG WAIT_MS@WAIT_MS@4366 00000204
-CSEG compare_1    00000234
-CSEG compare_2    00000241
-CSEG colour_orange 0000029b
-CSEG iluminate    00000273
-CSEG compare_3    0000024e
-CSEG colour_yellowish 00000299
-CSEG compare_4    0000025b
-CSEG colour_green 00000297
-CSEG default_colour 00000268
-CSEG colour_blue2 00000295
-CSEG colour_blue1 00000293
-CSEG colour_red   0000029d
+CSEG WAIT_MS@WAIT_MS@4403 00000204
+CSEG compare_1    00000241
+CSEG matrix_alarm 00000236
+CSEG colour_red   000002c4
+CSEG iluminate    00000280
+CSEG compare_2    0000024e
+CSEG colour_orange 000002c2
+CSEG compare_3    0000025b
+CSEG colour_yellowish 000002c0
+CSEG compare_4    00000268
+CSEG colour_green 000002be
+CSEG default_colour 00000275
+CSEG colour_blue2 000002bc
+CSEG colour_blue1 000002ba

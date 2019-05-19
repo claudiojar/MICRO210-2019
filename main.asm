@@ -84,10 +84,24 @@ main:
 
 	// partie 2: comparer TMAX / TAMB (copiée dans b3)
 	andi b0, 0b01111111 ; BEAUF 
-	/*cpse b0,a3
-	rjmp PC+3
-	cbi PORTE,SPEAKER
-	WAIT_US 100*/
+	cpse b0,a3
+	rjmp compare_1
+
+	matrix_alarm :
+		ldi zl, low(2*colour_red) ;point to table
+		ldi zh, high(2*colour_red)
+		lpm
+		mov c1,r0	; read low byte from table
+		adiw zl,1	; increment pointer z
+		lpm
+		mov c2, r0
+		adiw zl,1
+		lpm
+		mov c3, r0
+		rjmp iluminate
+		
+	;cbi PORTE,SPEAKER
+	;WAIT_US 100*/
 
 //=======================================================================================	
 	// LED MATRIX //
@@ -178,12 +192,12 @@ main:
 	PRINTF	LCD
 	.db		"temp=",FFRAC2+FSIGN,a,4,$42,"C ",CR,0 ; écriture de la température ambiante
 		
-	clr c0      // technique de sioux
-	add c0,a3
+	;clr c0      // technique de sioux
+	;add c0,a3
 	rcall LCD_LF ; passe à la ligne 2 du lcd
 	PRINTF	LCD
-	;.db "Tmax=", FDEC,b,"C ",0						   ;écriture de la Tmax set par l'utilisateur
-	.db " a3 = ", FDEC,c,0
+	.db "Tmax=", FDEC,b,"C ",0						   ;écriture de la Tmax set par l'utilisateur
+	;.db " a3 = ", FDEC,c,0
 	
 	
 	rjmp	main
@@ -192,7 +206,7 @@ main:
 colour_blue1 : .db 0xff, 0x99, 0xff		;used for temps below 22
 colour_blue2 : .db 0xb2, 0x66, 0xff		;used for temps between 22 ans 24
 colour_green : .db 0xff, 0x01, 0x00		;used for temps between 24 and 25
-colour_yellowish : .db 0xd9, 0xff, 0x3c ;used for temps between 25 and 27 
-colour_orange : .db 0x90,0xff, 0x01		;used for temps above 27 
+colour_yellowish : .db 0xd9, 0xf0, 0x3c ;used for temps between 25 and 27 
+colour_orange : .db 0x66,0xcc, 0x01		;used for temps above 27 
 colour_red : .db 0x01,0xff, 0x01		;used for alarm
 
