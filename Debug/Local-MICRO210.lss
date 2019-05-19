@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.2.7  C:\Users\claud\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-claudiojar-the-cooler-merge\main.asm Sun May 19 11:51:21 2019
+AVRASM ver. 2.2.7  C:\Users\claud\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-claudiojar-the-cooler-merge\main.asm Sun May 19 12:21:10 2019
 
 [builtin](2): Including file 'C:\Users\claud\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-claudiojar-the-cooler-merge\m128def.inc'
 C:\Users\claud\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-claudiojar-the-cooler-merge\main.asm(10): Including file 'C:\Users\claud\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-claudiojar-the-cooler-merge\macros.asm'
@@ -3153,369 +3153,23 @@ C:\Users\claud\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO2
                                  .macro WS2812b4_MAIN
                                  ;8 LEDS 1
                                  	
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 	mov b1,@0		;pixel with a given value 
-                                 	mov b2,@1
-                                 	mov b3,@2
-                                 	rcall ws2812b4_byte3wr
-                                 
-                                 
-                                 	
-                                 	rcall ws2812b4_reset
+                                 	clr r17
+                                 
+                                 	for_lightup_leds:
+                                 		cpi r17,16
+                                 		breq end_for_lightup_leds
+                                 
+                                 		mov b1,@0		;pixel with a given value 
+                                 		mov b2,@1
+                                 		mov b3,@2
+                                 		rcall ws2812b4_byte3wr
+                                 
+                                 		inc r17
+                                 		rjmp for_lightup_leds
+                                 
+                                 	end_for_lightup_leds :
+                                 		rcall ws2812b4_reset
+                                 		clr r17
                                  .endm
                                  
                                  
@@ -4461,23 +4115,29 @@ C:\Users\claud\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO2
                                  	// partie 2: comparer TMAX / TAMB (copiée dans b3)
 000233 776f                      	andi b0, 0b01111111 ; BEAUF 
 000234 1365                      	cpse b0,a3
-000235 c00b                      	rjmp compare_1
+000235 c00f                      	rjmp compare_1
+                                 	
+                                 
+000236 e16e                      	ldi b0, 30 
+000237 e159                      	ldi a3, 25
+000238 1756                      	cp a3, b0 ;test if we're over the maximum temperature
+000239 f002                      	brmi matrix_alarm
                                  
                                  	matrix_alarm :
-000236 e9e8                      		ldi zl, low(2*colour_red) ;point to table
-000237 e0f7                      		ldi zh, high(2*colour_red)
-000238 95c8                      		lpm
-000239 2c90                      		mov c1,r0	; read low byte from table
-00023a 9631                      		adiw zl,1	; increment pointer z
-00023b 95c8                      		lpm
-00023c 2ca0                      		mov c2, r0
-00023d 9631                      		adiw zl,1
-00023e 95c8                      		lpm
-00023f 2cb0                      		mov c3, r0
-000240 c047                      		rjmp iluminate
+00023a e7e4                      		ldi zl, low(2*colour_red) ;point to table
+00023b e0f5                      		ldi zh, high(2*colour_red)
+00023c 95c8                      		lpm
+00023d 2c90                      		mov c1,r0	; read low byte from table
+00023e 9631                      		adiw zl,1	; increment pointer z
+00023f 95c8                      		lpm
+000240 2ca0                      		mov c2, r0
+000241 9631                      		adiw zl,1
+000242 95c8                      		lpm
+000243 2cb0                      		mov c3, r0
+000244 c047                      		rjmp iluminate
                                  		
                                  	;cbi PORTE,SPEAKER
-                                 	;WAIT_US 100*/
+                                 	;WAIT_US 100
                                  
                                  //=======================================================================================	
                                  	// LED MATRIX //
@@ -4485,433 +4145,155 @@ C:\Users\claud\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO2
                                  	;ldi a3, 28
                                  	;sous_routine pour affecter une couleur à la LED en fonction de la température
                                  	compare_1 : 
-000241 1756                      		cp a3, b0 ;test if we're over the maximum temperature
-000242 f39a                      		brmi matrix_alarm
-000243 315b                      		cpi a3, 27	;compare a3 to temperature 27
-000244 f05a                      		brmi compare_2 ;if negative branch to next routine
-000245 e9e4                      		ldi zl, low(2*colour_orange) ;point to table
-000246 e0f7                      		ldi zh, high(2*colour_orange)
-000247 95c8                      		lpm
-000248 2c90                      		mov c1,r0	; read low byte from table
-000249 9631                      		adiw zl,1	; increment pointer z
-00024a 95c8                      		lpm
-00024b 2ca0                      		mov c2, r0
-00024c 9631                      		adiw zl,1
-00024d 95c8                      		lpm
-00024e 2cb0                      		mov c3, r0
-00024f c038                      		rjmp iluminate
+000245 1756                      		cp a3, b0 ;test if we're over the maximum temperature
+000246 f39a                      		brmi matrix_alarm
+000247 315b                      		cpi a3, 27	;compare a3 to temperature 27
+000248 f05a                      		brmi compare_2 ;if negative branch to next routine
+000249 e7e0                      		ldi zl, low(2*colour_orange) ;point to table
+00024a e0f5                      		ldi zh, high(2*colour_orange)
+00024b 95c8                      		lpm
+00024c 2c90                      		mov c1,r0	; read low byte from table
+00024d 9631                      		adiw zl,1	; increment pointer z
+00024e 95c8                      		lpm
+00024f 2ca0                      		mov c2, r0
+000250 9631                      		adiw zl,1
+000251 95c8                      		lpm
+000252 2cb0                      		mov c3, r0
+000253 c038                      		rjmp iluminate
                                  
                                  	compare_2 : 
-000250 1756                      		cp a3, b0 ;test if we're over the maximum temperature
-000251 f322                      		brmi matrix_alarm
-000252 3159                      		cpi a3, 25	;compare a3 to temperature 25
-000253 f05a                      		brmi compare_3
-000254 e9e0                      		ldi zl, low(2*colour_yellowish) ;point to table
-000255 e0f7                      		ldi zh, high(2*colour_yellowish)
-000256 95c8                      		lpm
-000257 2c90                      		mov c1,r0	; read low byte from table
-000258 9631                      		adiw zl,1	; increment pointer z
-000259 95c8                      		lpm
-00025a 2ca0                      		mov c2, r0
-00025b 9631                      		adiw zl,1
-00025c 95c8                      		lpm
-00025d 2cb0                      		mov c3, r0
-00025e c029                      		rjmp iluminate
+000254 1756                      		cp a3, b0 ;test if we're over the maximum temperature
+000255 f322                      		brmi matrix_alarm
+000256 3159                      		cpi a3, 25	;compare a3 to temperature 25
+000257 f05a                      		brmi compare_3
+000258 e6ec                      		ldi zl, low(2*colour_yellowish) ;point to table
+000259 e0f5                      		ldi zh, high(2*colour_yellowish)
+00025a 95c8                      		lpm
+00025b 2c90                      		mov c1,r0	; read low byte from table
+00025c 9631                      		adiw zl,1	; increment pointer z
+00025d 95c8                      		lpm
+00025e 2ca0                      		mov c2, r0
+00025f 9631                      		adiw zl,1
+000260 95c8                      		lpm
+000261 2cb0                      		mov c3, r0
+000262 c029                      		rjmp iluminate
                                  
                                  	compare_3 : 
-00025f 1756                      		cp a3, b0 ;test if we're over the maximum temperature
-000260 f2aa                      		brmi matrix_alarm
-000261 3158                      		cpi a3, 24	;compare a3 to temperature 24
-000262 f05a                      		brmi compare_4 ;if negative branch to next routine
-000263 e8ec                      		ldi zl, low(2*colour_green) ;point to table
-000264 e0f7                      		ldi zh, high(2*colour_green)
-000265 95c8                      		lpm
-000266 2c90                      		mov c1,r0	; read low byte from table
-000267 9631                      		adiw zl,1	; increment pointer z
-000268 95c8                      		lpm
-000269 2ca0                      		mov c2, r0
-00026a 9631                      		adiw zl,1
-00026b 95c8                      		lpm
-00026c 2cb0                      		mov c3, r0
-00026d c01a                      		rjmp iluminate
+000263 1756                      		cp a3, b0 ;test if we're over the maximum temperature
+000264 f2aa                      		brmi matrix_alarm
+000265 3158                      		cpi a3, 24	;compare a3 to temperature 24
+000266 f05a                      		brmi compare_4 ;if negative branch to next routine
+000267 e6e8                      		ldi zl, low(2*colour_green) ;point to table
+000268 e0f5                      		ldi zh, high(2*colour_green)
+000269 95c8                      		lpm
+00026a 2c90                      		mov c1,r0	; read low byte from table
+00026b 9631                      		adiw zl,1	; increment pointer z
+00026c 95c8                      		lpm
+00026d 2ca0                      		mov c2, r0
+00026e 9631                      		adiw zl,1
+00026f 95c8                      		lpm
+000270 2cb0                      		mov c3, r0
+000271 c01a                      		rjmp iluminate
                                  
                                  	compare_4 : 
-00026e 1756                      		cp a3, b0 ;test if we're over the maximum temperature
-00026f f232                      		brmi matrix_alarm
-000270 3156                      		cpi a3, 22	;compare a3 to temperature 22
-000271 f05a                      		brmi default_colour ;if negative branch to next routine
-000272 e8e8                      		ldi zl, low(2*colour_blue2) ;point to table
-000273 e0f7                      		ldi zh, high(2*colour_blue2)
-000274 95c8                      		lpm
-000275 2c90                      		mov c1,r0	; read low byte from table
-000276 9631                      		adiw zl,1	; increment pointer z
-000277 95c8                      		lpm
-000278 2ca0                      		mov c2, r0
-000279 9631                      		adiw zl,1
-00027a 95c8                      		lpm
-00027b 2cb0                      		mov c3, r0
-00027c c00b                      		rjmp iluminate
+000272 1756                      		cp a3, b0 ;test if we're over the maximum temperature
+000273 f232                      		brmi matrix_alarm
+000274 3156                      		cpi a3, 22	;compare a3 to temperature 22
+000275 f05a                      		brmi default_colour ;if negative branch to next routine
+000276 e6e4                      		ldi zl, low(2*colour_blue2) ;point to table
+000277 e0f5                      		ldi zh, high(2*colour_blue2)
+000278 95c8                      		lpm
+000279 2c90                      		mov c1,r0	; read low byte from table
+00027a 9631                      		adiw zl,1	; increment pointer z
+00027b 95c8                      		lpm
+00027c 2ca0                      		mov c2, r0
+00027d 9631                      		adiw zl,1
+00027e 95c8                      		lpm
+00027f 2cb0                      		mov c3, r0
+000280 c00b                      		rjmp iluminate
                                  
                                  
                                  	default_colour : 
-00027d e8e4                      		ldi zl, low(2*colour_blue1) ;point to table
-00027e e0f7                      		ldi zh, high(2*colour_blue1)
-00027f 95c8                      		lpm
-000280 2c90                      		mov c1,r0	; read low byte from table
-000281 9631                      		adiw zl,1	; increment pointer z
-000282 95c8                      		lpm
-000283 2ca0                      		mov c2, r0
-000284 9631                      		adiw zl,1
-000285 95c8                      		lpm
-000286 2cb0                      		mov c3, r0
-000287 c000                      		rjmp iluminate
+000281 e6e0                      		ldi zl, low(2*colour_blue1) ;point to table
+000282 e0f5                      		ldi zh, high(2*colour_blue1)
+000283 95c8                      		lpm
+000284 2c90                      		mov c1,r0	; read low byte from table
+000285 9631                      		adiw zl,1	; increment pointer z
+000286 95c8                      		lpm
+000287 2ca0                      		mov c2, r0
+000288 9631                      		adiw zl,1
+000289 95c8                      		lpm
+00028a 2cb0                      		mov c3, r0
+00028b c000                      		rjmp iluminate
                                  
                                  	iluminate : 
-000288 2d79
-000289 2d8a
-00028a 2d9b
-00028b dd83
-00028c 2d79
-00028d 2d8a
-00028e 2d9b
-00028f dd7f
-000290 2d79
-000291 2d8a
-000292 2d9b
-000293 dd7b
-000294 2d79
-000295 2d8a
-000296 2d9b
-000297 dd77
-000298 2d79
-000299 2d8a
-00029a 2d9b
-00029b dd73
-00029c 2d79
-00029d 2d8a
-00029e 2d9b
-00029f dd6f
-0002a0 2d79
-0002a1 2d8a
-0002a2 2d9b
-0002a3 dd6b
-0002a4 2d79
-0002a5 2d8a
-0002a6 2d9b
-0002a7 dd67
-0002a8 2d79
-0002a9 2d8a
-0002aa 2d9b
-0002ab dd63
-0002ac 2d79
-0002ad 2d8a
-0002ae 2d9b
-0002af dd5f
-0002b0 2d79
-0002b1 2d8a
-0002b2 2d9b
-0002b3 dd5b
-0002b4 2d79
-0002b5 2d8a
-0002b6 2d9b
-0002b7 dd57
-0002b8 2d79
-0002b9 2d8a
-0002ba 2d9b
-0002bb dd53
-0002bc 2d79
-0002bd 2d8a
-0002be 2d9b
-0002bf dd4f
-0002c0 2d79
-0002c1 2d8a
-0002c2 2d9b
-0002c3 dd4b
-0002c4 2d79
-0002c5 2d8a
-0002c6 2d9b
-0002c7 dd47
-0002c8 2d79
-0002c9 2d8a
-0002ca 2d9b
-0002cb dd43
-0002cc 2d79
-0002cd 2d8a
-0002ce 2d9b
-0002cf dd3f
-0002d0 2d79
-0002d1 2d8a
-0002d2 2d9b
-0002d3 dd3b
-0002d4 2d79
-0002d5 2d8a
-0002d6 2d9b
-0002d7 dd37
-0002d8 2d79
-0002d9 2d8a
-0002da 2d9b
-0002db dd33
-0002dc 2d79
-0002dd 2d8a
-0002de 2d9b
-0002df dd2f
-0002e0 2d79
-0002e1 2d8a
-0002e2 2d9b
-0002e3 dd2b
-0002e4 2d79
-0002e5 2d8a
-0002e6 2d9b
-0002e7 dd27
-0002e8 2d79
-0002e9 2d8a
-0002ea 2d9b
-0002eb dd23
-0002ec 2d79
-0002ed 2d8a
-0002ee 2d9b
-0002ef dd1f
-0002f0 2d79
-0002f1 2d8a
-0002f2 2d9b
-0002f3 dd1b
-0002f4 2d79
-0002f5 2d8a
-0002f6 2d9b
-0002f7 dd17
-0002f8 2d79
-0002f9 2d8a
-0002fa 2d9b
-0002fb dd13
-0002fc 2d79
-0002fd 2d8a
-0002fe 2d9b
-0002ff dd0f
-000300 2d79
-000301 2d8a
-000302 2d9b
-000303 dd0b
-000304 2d79
-000305 2d8a
-000306 2d9b
-000307 dd07
-000308 2d79
-000309 2d8a
-00030a 2d9b
-00030b dd03
-00030c 2d79
-00030d 2d8a
-00030e 2d9b
-00030f dcff
-000310 2d79
-000311 2d8a
-000312 2d9b
-000313 dcfb
-000314 2d79
-000315 2d8a
-000316 2d9b
-000317 dcf7
-000318 2d79
-000319 2d8a
-00031a 2d9b
-00031b dcf3
-00031c 2d79
-00031d 2d8a
-00031e 2d9b
-00031f dcef
-000320 2d79
-000321 2d8a
-000322 2d9b
-000323 dceb
-000324 2d79
-000325 2d8a
-000326 2d9b
-000327 dce7
-000328 2d79
-000329 2d8a
-00032a 2d9b
-00032b dce3
-00032c 2d79
-00032d 2d8a
-00032e 2d9b
-00032f dcdf
-000330 2d79
-000331 2d8a
-000332 2d9b
-000333 dcdb
-000334 2d79
-000335 2d8a
-000336 2d9b
-000337 dcd7
-000338 2d79
-000339 2d8a
-00033a 2d9b
-00033b dcd3
-00033c 2d79
-00033d 2d8a
-00033e 2d9b
-00033f dccf
-000340 2d79
-000341 2d8a
-000342 2d9b
-000343 dccb
-000344 2d79
-000345 2d8a
-000346 2d9b
-000347 dcc7
-000348 2d79
-000349 2d8a
-00034a 2d9b
-00034b dcc3
-00034c 2d79
-00034d 2d8a
-00034e 2d9b
-00034f dcbf
-000350 2d79
-000351 2d8a
-000352 2d9b
-000353 dcbb
-000354 2d79
-000355 2d8a
-000356 2d9b
-000357 dcb7
-000358 2d79
-000359 2d8a
-00035a 2d9b
-00035b dcb3
-00035c 2d79
-00035d 2d8a
-00035e 2d9b
-00035f dcaf
-000360 2d79
-000361 2d8a
-000362 2d9b
-000363 dcab
-000364 2d79
-000365 2d8a
-000366 2d9b
-000367 dca7
-000368 2d79
-000369 2d8a
-00036a 2d9b
-00036b dca3
-00036c 2d79
-00036d 2d8a
-00036e 2d9b
-00036f dc9f
-000370 2d79
-000371 2d8a
-000372 2d9b
-000373 dc9b
-000374 2d79
-000375 2d8a
-000376 2d9b
-000377 dc97
-000378 2d79
-000379 2d8a
-00037a 2d9b
-00037b dc93
-00037c 2d79
-00037d 2d8a
-00037e 2d9b
-00037f dc8f
-000380 2d79
-000381 2d8a
-000382 2d9b
-000383 dc8b
-000384 2d79
-000385 2d8a
-000386 2d9b
-000387 dc87
-000388 2d79
-000389 2d8a
-00038a 2d9b
-00038b dc83
-00038c 2d79
-00038d 2d8a
-00038e 2d9b
-00038f dc7f
-000390 2d79
-000391 2d8a
-000392 2d9b
-000393 dc7b
-000394 2d79
-000395 2d8a
-000396 2d9b
-000397 dc77
-000398 2d79
-000399 2d8a
-00039a 2d9b
-00039b dc73
-00039c 2d79
-00039d 2d8a
-00039e 2d9b
-00039f dc6f
-0003a0 2d79
-0003a1 2d8a
-0003a2 2d9b
-0003a3 dc6b
-0003a4 2d79
-0003a5 2d8a
-0003a6 2d9b
-0003a7 dc67
-0003a8 dc97                      		WS2812b4_MAIN c1,c2,c3  ; put specified colour in matrix LED
+00028c 2711
+00028d 3110
+00028e f031
+00028f 2d79
+000290 2d8a
+000291 2d9b
+000292 dd7c
+000293 9513
+000294 cff8
+000295 ddaa
+000296 2711                      		WS2812b4_MAIN c1,c2,c3  ; put specified colour in matrix LED
                                  //=====================================================================
                                  
                                  	// Affichage sur LCD//
                                  	
-0003a9 dcb7                      	rcall LCD_clear
-0003aa e505
-0003ab 2e40
-0003ac e000
-0003ad 2e50
-0003ae dce4                      	PRINTF	LCD
-0003af 6574
-0003b0 706d
-0003b1 8b3d
-0003b2 0412
-0003b3 4342
-0003b4 0d20
-C:\Users\claud\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-claudiojar-the-cooler-merge\main.asm(201): warning: .cseg .db misalignment - padding zero byte
-0003b5 0000                      	.db		"temp=",FFRAC2+FSIGN,a,4,$42,"C ",CR,0 ; écriture de la température ambiante
+000297 ddc9                      	rcall LCD_clear
+000298 e505
+000299 2e40
+00029a e000
+00029b 2e50
+00029c ddf6                      	PRINTF	LCD
+00029d 6574
+00029e 706d
+00029f 8b3d
+0002a0 0412
+0002a1 4342
+0002a2 0d20
+C:\Users\claud\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-claudiojar-the-cooler-merge\main.asm(207): warning: .cseg .db misalignment - padding zero byte
+0002a3 0000                      	.db		"temp=",FFRAC2+FSIGN,a,4,$42,"C ",CR,0 ; écriture de la température ambiante
                                  		
                                  	;clr c0      // technique de sioux
                                  	;add c0,a3
-0003b6 dcd7                      	rcall LCD_LF ; passe à la ligne 2 du lcd
-0003b7 e505
-0003b8 2e40
-0003b9 e000
-0003ba 2e50
-0003bb dcd7                      	PRINTF	LCD
-0003bc 6d54
-0003bd 7861
-0003be c03d
-0003bf 4316
-0003c0 0020                      	.db "Tmax=", FDEC,b,"C ",0						   ;écriture de la Tmax set par l'utilisateur
+0002a4 dde9                      	rcall LCD_LF ; passe à la ligne 2 du lcd
+0002a5 e505
+0002a6 2e40
+0002a7 e000
+0002a8 2e50
+0002a9 dde9                      	PRINTF	LCD
+0002aa 6d54
+0002ab 7861
+0002ac c03d
+0002ad 4316
+0002ae 0020                      	.db "Tmax=", FDEC,b,"C ",0						   ;écriture de la Tmax set par l'utilisateur
                                  	;.db " a3 = ", FDEC,c,0
                                  	
                                  	
-0003c1 ce3a                      	rjmp	main
+0002af cf4c                      	rjmp	main
                                  
                                  	; ===== LUT for LED colours ===== -> colour coding is GRB
-0003c2 99ff
-C:\Users\claud\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-claudiojar-the-cooler-merge\main.asm(214): warning: .cseg .db misalignment - padding zero byte
-0003c3 00ff                      colour_blue1 : .db 0xff, 0x99, 0xff		;used for temps below 22
-0003c4 66b2
-C:\Users\claud\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-claudiojar-the-cooler-merge\main.asm(215): warning: .cseg .db misalignment - padding zero byte
-0003c5 00ff                      colour_blue2 : .db 0xb2, 0x66, 0xff		;used for temps between 22 ans 24
-0003c6 01ff
-C:\Users\claud\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-claudiojar-the-cooler-merge\main.asm(216): warning: .cseg .db misalignment - padding zero byte
-0003c7 0000                      colour_green : .db 0xff, 0x01, 0x00		;used for temps between 24 and 25
-0003c8 f0f0
-C:\Users\claud\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-claudiojar-the-cooler-merge\main.asm(217): warning: .cseg .db misalignment - padding zero byte
-0003c9 0033                      colour_yellowish : .db 0xf0, 0xf0, 0x33 ;used for temps between 25 and 27 
-0003ca cc66
-C:\Users\claud\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-claudiojar-the-cooler-merge\main.asm(218): warning: .cseg .db misalignment - padding zero byte
-0003cb 0001                      colour_orange : .db 0x66,0xcc, 0x01		;used for temps above 27 
-0003cc ff01
-C:\Users\claud\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-claudiojar-the-cooler-merge\main.asm(219): warning: .cseg .db misalignment - padding zero byte
-0003cd 0001                      colour_red : .db 0x01,0xff, 0x01		;used for alarm
+0002b0 99ff
+C:\Users\claud\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-claudiojar-the-cooler-merge\main.asm(220): warning: .cseg .db misalignment - padding zero byte
+0002b1 00ff                      colour_blue1 : .db 0xff, 0x99, 0xff		;used for temps below 22
+0002b2 66b2
+C:\Users\claud\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-claudiojar-the-cooler-merge\main.asm(221): warning: .cseg .db misalignment - padding zero byte
+0002b3 00ff                      colour_blue2 : .db 0xb2, 0x66, 0xff		;used for temps between 22 ans 24
+0002b4 01ff
+C:\Users\claud\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-claudiojar-the-cooler-merge\main.asm(222): warning: .cseg .db misalignment - padding zero byte
+0002b5 0000                      colour_green : .db 0xff, 0x01, 0x00		;used for temps between 24 and 25
+0002b6 f0f0
+C:\Users\claud\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-claudiojar-the-cooler-merge\main.asm(223): warning: .cseg .db misalignment - padding zero byte
+0002b7 0033                      colour_yellowish : .db 0xf0, 0xf0, 0x33 ;used for temps between 25 and 27 
+0002b8 cc66
+C:\Users\claud\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-claudiojar-the-cooler-merge\main.asm(224): warning: .cseg .db misalignment - padding zero byte
+0002b9 0001                      colour_orange : .db 0x66,0xcc, 0x01		;used for temps above 27 
+0002ba ff01
+C:\Users\claud\Google Drive\EPFL\BA4 - 2019\Microcontrôleurs\Projet MICRO\MICRO210-claudiojar-the-cooler-merge\main.asm(225): warning: .cseg .db misalignment - padding zero byte
+0002bb 0001                      colour_red : .db 0x01,0xff, 0x01		;used for alarm
                                  
 
 
@@ -4931,27 +4313,27 @@ counted separately from r26..r31 here.
 
 "ATmega128" register use summary:
 x  :   6 y  :   0 z  :   0 r0 :  25 r1 :   0 r2 :   0 r3 :  18 r4 :   3 
-r5 :   3 r6 :   0 r7 :   0 r8 :   7 r9 :  83 r10:  83 r11:  84 r12:  11 
-r13:   0 r14:   0 r15:   0 r16: 141 r17:   0 r18:  36 r19:  29 r20:  19 
-r21:  27 r22:  18 r23:  99 r24:  81 r25:  89 r26:   4 r27:   4 r28:   0 
+r5 :   3 r6 :   0 r7 :   0 r8 :   7 r9 :  12 r10:  12 r11:  13 r12:  11 
+r13:   0 r14:   0 r15:   0 r16: 141 r17:   4 r18:  36 r19:  29 r20:  19 
+r21:  29 r22:  20 r23:  28 r24:  10 r25:  18 r26:   4 r27:   4 r28:   0 
 r29:   0 r30:  29 r31:  12 
-Registers used: 23 out of 35 (65.7%)
+Registers used: 24 out of 35 (68.6%)
 
 "ATmega128" instruction use summary:
 .lds  :   0 .sts  :   0 adc   :   0 add   :   6 adiw  :  17 and   :   0 
 andi  :  10 asr   :   2 bclr  :   0 bld   :   2 brbc  :   0 brbs  :   0 
-brcc  :   3 brcs  :   0 break :   0 breq  :  16 brge  :   0 brhc  :   0 
-brhs  :   0 brid  :   0 brie  :   0 brlo  :   1 brlt  :   0 brmi  :   9 
+brcc  :   3 brcs  :   0 break :   0 breq  :  17 brge  :   0 brhc  :   0 
+brhs  :   0 brid  :   0 brie  :   0 brlo  :   1 brlt  :   0 brmi  :  10 
 brne  :  20 brpl  :   1 brsh  :   1 brtc  :   5 brts  :   0 brvc  :   0 
 brvs  :   0 bset  :   0 bst   :   6 call  :   0 cbi   :  10 cbr   :   0 
-clc   :   1 clh   :   0 cli   :   0 cln   :   0 clr   :  17 cls   :   0 
-clt   :   1 clv   :   0 clz   :   0 com   :   8 cp    :   5 cpc   :   3 
-cpi   :  14 cpse  :   1 dec   :  22 elpm  :   0 eor   :   1 fmul  :   0 
-fmuls :   0 fmulsu:   0 icall :   1 ijmp  :   1 in    :   6 inc   :   3 
-jmp   :   0 ld    :   6 ldd   :   0 ldi   :  84 lds   :   3 lpm   :  66 
-lsl   :   4 lsr   :   3 mov   : 263 movw  :   0 mul   :   0 muls  :   0 
+clc   :   1 clh   :   0 cli   :   0 cln   :   0 clr   :  19 cls   :   0 
+clt   :   1 clv   :   0 clz   :   0 com   :   8 cp    :   6 cpc   :   3 
+cpi   :  15 cpse  :   1 dec   :  22 elpm  :   0 eor   :   1 fmul  :   0 
+fmuls :   0 fmulsu:   0 icall :   1 ijmp  :   1 in    :   6 inc   :   4 
+jmp   :   0 ld    :   6 ldd   :   0 ldi   :  86 lds   :   3 lpm   :  66 
+lsl   :   4 lsr   :   3 mov   :  50 movw  :   0 mul   :   0 muls  :   0 
 mulsu :   0 neg   :   0 nop   :  18 or    :   0 ori   :   2 out   :   9 
-pop   :  28 push  :  27 rcall : 126 ret   :  24 reti  :   0 rjmp  :  51 
+pop   :  28 push  :  27 rcall :  55 ret   :  24 reti  :   0 rjmp  :  52 
 rol   :  10 ror   :  17 sbc   :   3 sbci  :   0 sbi   :  10 sbic  :   0 
 sbis  :   2 sbiw  :   0 sbr   :   1 sbrc  :  14 sbrs  :   0 sec   :   0 
 seh   :   0 sei   :   0 sen   :   0 ser   :   0 ses   :   0 set   :   1 
@@ -4963,7 +4345,7 @@ Instructions used: 57 out of 114 (50.0%)
 "ATmega128" memory use summary [bytes]:
 Segment   Begin    End      Code   Data   Used    Size   Use%
 ---------------------------------------------------------------
-[.cseg] 0x000000 0x00079c   1900     48   1948  131072   1.5%
+[.cseg] 0x000000 0x000578   1352     48   1400  131072   1.1%
 [.dseg] 0x000100 0x000100      0      0      0    4096   0.0%
 [.eseg] 0x000000 0x000000      0      0      0    4096   0.0%
 

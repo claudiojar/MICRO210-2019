@@ -86,6 +86,12 @@ main:
 	andi b0, 0b01111111 ; BEAUF 
 	cpse b0,a3
 	rjmp compare_1
+	
+
+	ldi b0, 30 
+	ldi a3, 25
+	cp a3, b0 ;test if we're over the maximum temperature
+	brmi matrix_alarm
 
 	matrix_alarm :
 		ldi zl, low(2*colour_red) ;point to table
@@ -101,7 +107,7 @@ main:
 		rjmp iluminate
 		
 	;cbi PORTE,SPEAKER
-	;WAIT_US 100*/
+	;WAIT_US 100
 
 //=======================================================================================	
 	// LED MATRIX //
