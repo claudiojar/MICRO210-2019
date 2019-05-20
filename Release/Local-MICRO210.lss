@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.2.6  C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-claudiojar-the-cooler-merge (2)\MICRO210-claudiojar-the-cooler-merge\main.asm Mon May 20 16:16:35 2019
+AVRASM ver. 2.2.6  C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-claudiojar-the-cooler-merge (2)\MICRO210-claudiojar-the-cooler-merge\main.asm Mon May 20 16:20:35 2019
 
 [builtin](2): Including file 'C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-claudiojar-the-cooler-merge (2)\MICRO210-claudiojar-the-cooler-merge\m128def.inc'
 C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-claudiojar-the-cooler-merge (2)\MICRO210-claudiojar-the-cooler-merge\main.asm(9): Including file 'C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-claudiojar-the-cooler-merge (2)\MICRO210-claudiojar-the-cooler-merge\macros.asm'
@@ -3129,7 +3129,7 @@ C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-cl
 000035 e008
 000036 bf09                      	OUTI	EIMSK,8			; enable INT3
 000037 e000
-000038 bf0a                      	OUTI	EICRB,0			; low
+000038 bf0a                      	OUTI	EICRB,0			; reset du système en appuyant sur le bonton 3
 000039 9478                      	sei						; set global interrupts
 00003a d1a7                      	rcall	wire1_init		; initialize 1-wire(R) interface
 00003b d06d                      	rcall	lcd_init		; initialize LCD
@@ -4123,7 +4123,7 @@ C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-cl
                                  
                                  	// COMPARE TMAX / T AMBIENTE //
                                  
-                                 	// partie 1 : on regroupe les bits qui nous intéressent dans le registre qui contient la T AMB
+                                 	// partie 1 : on regroupe les bits qui nous intéressent dans le registre qui contient la T AMB - utilisation de la pile par sécurité
                                  
 000259 930f                      	push w 
 00025a 2700                      	clr w
@@ -4171,7 +4171,6 @@ C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-cl
                                  //=======================================================================================	
                                  	// LED MATRIX //
                                  
-                                 	;ldi a3, 28
                                  	;sous_routine pour affecter une couleur à la LED en fonction de la température
                                  	compare_1 : 
 000279 1765                      		cp b0,a3 ;test if we're over the maximum temperature
@@ -4294,11 +4293,10 @@ C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-cl
 0002df 0412
 0002e0 4342
 0002e1 0d20
-C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-claudiojar-the-cooler-merge (2)\MICRO210-claudiojar-the-cooler-merge\main.asm(230): warning: .cseg .db misalignment - padding zero byte
+C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-claudiojar-the-cooler-merge (2)\MICRO210-claudiojar-the-cooler-merge\main.asm(229): warning: .cseg .db misalignment - padding zero byte
 0002e2 0000                      	.db		"temp=",FFRAC2+FSIGN,a,4,$42,"C ",CR,0 ; écriture de la température ambiante
                                  		
-                                 	;clr c0      // technique de sioux
-                                 	;add c0,a3
+                                 	
 0002e3 ddde                      	rcall LCD_LF ; passe à la ligne 2 du lcd
 0002e4 e809
 0002e5 2e40
@@ -4309,30 +4307,30 @@ C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-cl
 0002ea 7861
 0002eb c03d
 0002ec 4316
-0002ed 0020                      	.db "Tmax=", FDEC,b,"C ",0						   ;écriture de la Tmax set par l'utilisateur
-                                 	;.db " a3 = ", FDEC,c,0
+0002ed 0020                      	.db "Tmax=", FDEC,b,"C ",0					   ;écriture de la Tmax set par l'utilisateur
+                                 	
                                  	
                                  	
 0002ee cf41                      	rjmp	main
                                  
                                  ; ===== LUT for LED colours ===== -> colour coding is GRB
 0002ef 090f
-C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-claudiojar-the-cooler-merge (2)\MICRO210-claudiojar-the-cooler-merge\main.asm(243): warning: .cseg .db misalignment - padding zero byte
+C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-claudiojar-the-cooler-merge (2)\MICRO210-claudiojar-the-cooler-merge\main.asm(241): warning: .cseg .db misalignment - padding zero byte
 0002f0 000f                      colour_blue1 : .db 0x0f, 0x09, 0x0f		;used for temps below 22
 0002f1 060b
-C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-claudiojar-the-cooler-merge (2)\MICRO210-claudiojar-the-cooler-merge\main.asm(244): warning: .cseg .db misalignment - padding zero byte
+C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-claudiojar-the-cooler-merge (2)\MICRO210-claudiojar-the-cooler-merge\main.asm(242): warning: .cseg .db misalignment - padding zero byte
 0002f2 000f                      colour_blue2 : .db 0x0b, 0x06, 0x0f		;used for temps between 22 and 24
 0002f3 000f
-C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-claudiojar-the-cooler-merge (2)\MICRO210-claudiojar-the-cooler-merge\main.asm(245): warning: .cseg .db misalignment - padding zero byte
+C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-claudiojar-the-cooler-merge (2)\MICRO210-claudiojar-the-cooler-merge\main.asm(243): warning: .cseg .db misalignment - padding zero byte
 0002f4 0000                      colour_green : .db 0x0f, 0x00, 0x00		;used for temps between 24 and 25
 0002f5 0c06
-C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-claudiojar-the-cooler-merge (2)\MICRO210-claudiojar-the-cooler-merge\main.asm(246): warning: .cseg .db misalignment - padding zero byte
+C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-claudiojar-the-cooler-merge (2)\MICRO210-claudiojar-the-cooler-merge\main.asm(244): warning: .cseg .db misalignment - padding zero byte
 0002f6 0000                      colour_yellowish : .db 0x06, 0x0c, 0x00 ;used for temps between 25 and 27 
 0002f7 0f03
-C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-claudiojar-the-cooler-merge (2)\MICRO210-claudiojar-the-cooler-merge\main.asm(247): warning: .cseg .db misalignment - padding zero byte
+C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-claudiojar-the-cooler-merge (2)\MICRO210-claudiojar-the-cooler-merge\main.asm(245): warning: .cseg .db misalignment - padding zero byte
 0002f8 0000                      colour_orange : .db 0x03,0x0f, 0x00		;used for temps above 27 
 0002f9 0f00
-C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-claudiojar-the-cooler-merge (2)\MICRO210-claudiojar-the-cooler-merge\main.asm(248): warning: .cseg .db misalignment - padding zero byte
+C:\Users\Matthieu\Documents\EPFL\Semestre IV\Microcontrôleurs\PROJET\MICRO210-claudiojar-the-cooler-merge (2)\MICRO210-claudiojar-the-cooler-merge\main.asm(246): warning: .cseg .db misalignment - padding zero byte
 0002fa 0000                      colour_red : .db 0x00,0x0f, 0x00		;used for alarm
                                  
 

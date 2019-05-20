@@ -64,7 +64,7 @@
 ; ws2812b4_init		; arg: void; used: r16 (w)
 ; purpose: initialize AVR to support ws2812b
 ws2812b4_init:
-	OUTI	DDRE,0x08
+	OUTI	DDRE,0x08      // Outpout PORTX, PINX 
 ret
 
 ; ws2812b4_byte3wr	; arg: b1,b2,b3 ; used: r16 (w)
