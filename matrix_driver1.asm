@@ -35,7 +35,7 @@
 	;nop
 .endmacro
 
-; WS2812b4_MAIN	; macro 
+; WS2812b4_MAIN	; macro ; arg:b1,b2,b3 registers where we code the GRB temperature
 ; purpose: push colour to matrix
 .macro WS2812b4_MAIN
 ;8 LEDS 1

@@ -4,26 +4,26 @@
  *  Created: 13/05/2019 14:55:15
  *   Author: Duret Matthieu, Jaramillo Claudio
  */ 
-; main file	pour thermostat
+; main file	pour station météo
 
 .include "macros.asm"		; include macro definitions
 .include "definitions.asm"	; include register/constant definitions
 
-.org 0
+.org 0						;as soon as the microcontroller starts go to reset
 	rjmp  reset
 
 .org 8
-rjmp int_reset	
+	rjmp int_reset			;internal reset
 
-.org	OVF0addr		;timer overflow 0 interrupt vector
-		rjmp overflow0
+.org OVF0addr		;timer overflow 0 interrupt vector
+	rjmp overflow0
 
 ; === interrupt service routines ===
-overflow0:
-		INVP	PORTE,SPEAKER
-		reti
+overflow0: ;generate sound when Tmax is reached
+	INVP	PORTE,SPEAKER
+	reti
 
-int_reset: 
+int_reset: ;reset the machine
 		rjmp reset
 		reti
 
@@ -142,7 +142,7 @@ main:
 		mov c1,r0	; read low byte from table
 		adiw zl,1	; increment pointer z
 		lpm
-		mov c2, r0
+		mov c2, r0  ;repeat
 		adiw zl,1
 		lpm
 		mov c3, r0
@@ -224,14 +224,14 @@ main:
 
 	// Affichage sur LCD//
 	
-	rcall LCD_clear
-	PRINTF	LCD
+	rcall LCD_clear 	;clear LCD screen
+	PRINTF	LCD			;print info on LCD
 	.db		"temp=",FFRAC2+FSIGN,a,4,$42,"C ",CR,0 ; écriture de la température ambiante
 		
 	
 	rcall LCD_LF ; passe à la ligne 2 du lcd
 	PRINTF	LCD
-	.db "Tmax=", FDEC,b,"C ",0					   ;écriture de la Tmax set par l'utilisateur
+	.db "Tmax=", FDEC,b,"C ",0	;écriture de la Tmax set par l'utilisateur
 	
 	
 	
