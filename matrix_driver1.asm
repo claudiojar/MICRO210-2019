@@ -44,7 +44,7 @@
 	clr r17
 
 	for_lightup_leds:
-		cpi r17,32
+		cpi r17,64
 		breq end_for_lightup_leds
 
 		mov b1,@0		;pixel with a given value 

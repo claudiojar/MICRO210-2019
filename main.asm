@@ -100,7 +100,7 @@ main:
 	clr w 
 	pop w
 
-	// partie 2: comparer TMAX / TAMB (copiée dans b3)
+	// partie 2: comparer TMAX / TAMB (copiée dans a3)
 	andi b0, 0b01111111 ; Masquage du bit 7
 	cpse b0,a3
 	rjmp compare_1
